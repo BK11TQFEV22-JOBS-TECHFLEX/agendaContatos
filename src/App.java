@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-
+        ArrayList<Contato> contatos = new ArrayList<>();
         int opcao;
         do {
             System.out.println("1 - Cadastrar contato");
@@ -20,12 +21,18 @@ public class App {
                     System.out.println("Digite o telefone do contato");
                     String telefone = scanner.next();
 
-                    System.out.println("Futuro contato - " + nome + " " + sobrenome + " " + telefone);
+                    Contato contato = new Contato(nome, sobrenome, telefone);
+                    contatos.add(contato);
+                    System.out.println("Contato adicionado!");
 
                     break;
                 }
                 case 2: {
-                    System.out.println("Lista de contatos");
+                    System.out.println("Listagem de contatos:");
+                    for (Contato contato: contatos) {
+                        System.out.println(contato);
+                    }
+
                     break;
                 }
                 case 3: {
