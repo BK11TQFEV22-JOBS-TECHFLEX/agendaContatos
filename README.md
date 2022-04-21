@@ -2,6 +2,10 @@
 
 Sistema de agenda para aprendizado do git com um repositório Java.
 
+Esse sistema possui um menu e uma função de listar os registros cadastrados.
+
+OBS.: Os demais serviços estão em construção pela turma de guerreiros da #Redeflex. 
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
